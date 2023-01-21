@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color: #666;
+}
+
+#renkliMenu > ul{
+	width: 450px;
+	margin: 0 auto;
+	list-style: none;
+}
+
+#renkliMenu > ul > li{
+	display:inline-block;
+	position:relative;
+	line-height:1;
+	margin:1px;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(100,100,100,0.2) inset, 1px 1px 1px #CCC;
+}
+
+#renkliMenu > ul > li > a{
+	color:inherit;
+	font-size:24px;
+	padding:25px;
+}
+
+#renkliMenu li ul{
+	position:absolute;
+	list-style: none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	
+	max-height:0px;
+	overflow:hidden;
+	
+	transition: max-height 0.5s linear;
+	-webkit-transition: max-height 0.5s linear;
+	-moz-transition: max-height 0.5s linear;
+}
+
+#renkliMenu li:hover ul{
+	max-height: 200px;
+}
+
+#renkliMenu li ul li{
+	background-color: #313131;
+}
+
+#renkliMenu li ul li:nth-child(odd){
+	background-color: #393939;
+}
+
+#renkliMenu li ul li:first-child{
+	border-radius: 3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#renkliMenu li ul li:last-child{
+	border-radius: 0 0 3px 3px;
+}
+
+#renkliMenu li ul li a{
+	padding: 12px;
+	color: #FFF !important;
+	display:block;
+}
+
+.yesil{ background-color: #00c083; color: #127a5d; }
+.pembe{ background-color: #ea5080; color: #aa2a52; }
+.mavi{ background-color: #53bfe2; color: #2884a2; }
+.turuncu{ background-color: #f8c54d; color: #ab8426; }
+.mor{ background-color: #df6dc2; color: #9f3c85; }
